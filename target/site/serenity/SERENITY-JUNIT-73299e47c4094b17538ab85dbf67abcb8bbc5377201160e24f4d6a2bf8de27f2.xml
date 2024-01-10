@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Laarstype opzoeken" skipped="1" tests="1" time="0.32" timestamp="2024-01-08 09:06:20"><testcase name="een Laarstype opzoeken"><skipped/></testcase></testsuite>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Laarstype opzoeken" skipped="0" tests="1" time="9.18" timestamp="2023-12-03 09:01:52"><testcase name="een Laarstype opzoeken"/></testsuite>
+>>>>>>> Stashed changes

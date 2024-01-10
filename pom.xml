@@ -128,6 +128,14 @@
 		</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
+<<<<<<< Updated upstream
+=======
+			<artifactId>selenium-edge-driver</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+>>>>>>> Stashed changes
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>${selenium.version}</version>
 		</dependency>

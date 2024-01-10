@@ -20,11 +20,14 @@ public class OverzichtPage extends AbstractPage{
         element.click();
         return new Playlistpage(driver);
     }
+<<<<<<< Updated upstream
     public Lyricspage linknaarlyricspage(){
         WebElement showLyricsButton = driver.findElement(By.name("Show Lyrics"));
         showLyricsButton.click();
         return new Lyricspage(driver);
     }
+=======
+>>>>>>> Stashed changes
     public Playlistpage klikkennewplaylist(){
         WebElement element = driver.findElement(By.xpath("//*[@alt='New Playlist']"));
 
@@ -41,7 +44,11 @@ public class OverzichtPage extends AbstractPage{
     }
 
     public OverzichtPage klikkenopliedje(){
+<<<<<<< Updated upstream
         WebElement element = driver.findElement(By.xpath("//*[text()='erop of eronder']"));
+=======
+        WebElement element = driver.findElement(By.xpath("//*[text()='Erop Of Eronder']"));
+>>>>>>> Stashed changes
         element.click();
         return this;
     }

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Facilitator.java
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Rol.java
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/service/BrainstormSessieService.java
@@ -15,3 +16,22 @@
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Reactie.java
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/controller/PersoonController.java
 /home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Idee.java
+=======
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\controller\HomeController.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Facilitator.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Persoon.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Deelnemer.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Idee.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\dao\PersoonRepository.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\service\BrainstormSessieServiceImpl.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Administrator.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Sessie.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Onderwerp.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Reactie.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\Brainstorm2018Wa2sbApplication.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Organisator.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\controller\PersoonController.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Rol.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\service\BrainstormSessieService.java
+C:\Users\Charles\Documents\Toegepaste_Informatica_2023_2024\Software testing\voorbeeld cucumber\brainstorm2018wa2sb2023geintegreerdeopdracht1\src\main\java\be\odisee\brainstorm\domain\Bijdrage.java
+>>>>>>> Stashed changes

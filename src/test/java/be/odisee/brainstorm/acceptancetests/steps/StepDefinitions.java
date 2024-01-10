@@ -11,9 +11,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
+<<<<<<< Updated upstream
 
 public class StepDefinitions {
 
+=======
+import java.util.Set;
+
+public class StepDefinitions {
+	
+>>>>>>> Stashed changes
 	WebDriver driver = new ChromeDriver();;
 
 	OverzichtPage overzichtPage;
@@ -22,8 +29,11 @@ public class StepDefinitions {
 	Aboutpage aboutpage;
 	Signinpage signinpage;
 
+<<<<<<< Updated upstream
 	Lyricspage lyricspage;
 
+=======
+>>>>>>> Stashed changes
 
 	@Given("^I am on the home page$")
 	public void Ik_ben_op_de_home_page() throws Throwable {
@@ -31,6 +41,7 @@ public class StepDefinitions {
 		overzichtPage = new OverzichtPage(driver);
 		overzichtPage.navigeerNaarOverzichtPagina();
 	}
+<<<<<<< Updated upstream
 	@Given("^I am on the lyrics page$")
 	public void Ik_ben_op_de_lyricspage() throws Throwable {
 		overzichtPage = new OverzichtPage(driver);
@@ -41,6 +52,8 @@ public class StepDefinitions {
 		lyricspage = overzichtPage.linknaarlyricspage();
 
 	}
+=======
+>>>>>>> Stashed changes
 	@Given("^I am on the about page$")
 	public void Ik_ben_op_de_about_page() throws Throwable {
 
@@ -100,9 +113,14 @@ public class StepDefinitions {
 	}
 	@When("^I click on a song$")
 	public void ik_klik_op_liedje() throws Throwable {
+<<<<<<< Updated upstream
 		Thread.sleep(5000);
 
 		overzichtPage.klikkenopliedje();
+=======
+		Thread.sleep(8000);
+		overzichtPage.liedjesklikken();
+>>>>>>> Stashed changes
 
 	}
 	@When("^i click on a playlist$")
@@ -174,11 +192,16 @@ public class StepDefinitions {
 
 	@Then("^a new screen should pop up$")
 	public void Een_nieuw_scherm_gaat_open() throws Throwable {
+<<<<<<< Updated upstream
 		Thread.sleep(2000);
+=======
+		Thread.sleep(5000);
+>>>>>>> Stashed changes
 		signinpage.checkenmeerwindows();
 		signinpage.closeBrowser();
 
 	}
+<<<<<<< Updated upstream
 	@When("^I click on the lyrics icon$")
 	public void ik_klik_op_lyrics_icon() throws Throwable{
 		Thread.sleep(2000);
@@ -197,5 +220,7 @@ public class StepDefinitions {
 		lyricspage.checkenpagelyrics();
 		lyricspage.closeBrowser();
 	}
+=======
+>>>>>>> Stashed changes
 
 }
