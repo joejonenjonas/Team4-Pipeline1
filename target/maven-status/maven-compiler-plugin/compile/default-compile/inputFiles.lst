@@ -1,0 +1,17 @@
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Facilitator.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Rol.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/service/BrainstormSessieService.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Onderwerp.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/controller/HomeController.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Deelnemer.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/service/BrainstormSessieServiceImpl.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Sessie.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Administrator.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/Brainstorm2018Wa2sbApplication.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Bijdrage.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Persoon.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/dao/PersoonRepository.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Organisator.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Reactie.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/controller/PersoonController.java
+/home/devasc/Team4-Pipeline1/brainstorm2018wa2sb2023selenium3geintegreerdeopdracht deel 2/src/main/java/be/odisee/brainstorm/domain/Idee.java
