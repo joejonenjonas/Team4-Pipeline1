@@ -69,15 +69,7 @@ COPY --from=build /usr/src/app/next.config.js .
 EXPOSE 4000
 
 # Run the application
-CMD npm run dev
-
-
-
-
-
-
-
-                        
+CMD npm run dev      
                     """
                     writeFile(file: '/var/lib/jenkins/workspace/Team4_Pipeline/Dockerfile', text: dockerfileContent)
                 }
