@@ -60,7 +60,7 @@ pipeline {
         }
         stage('Build and Test') {
             steps {
-                sh 'mvn verify -X'
+                sh 'mvn clean verify -X'
             }
         }
         stage('Cleanup Docker Container') {
