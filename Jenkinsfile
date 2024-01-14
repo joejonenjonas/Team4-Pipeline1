@@ -17,6 +17,7 @@ pipeline {
                 }
             }
         }
+
         stage('Create Dockerfile') {
             steps {
                 script {
@@ -32,6 +33,7 @@ pipeline {
                 }
             }
         }
+
         stage('Build and Run Node.js App in Docker') {
             steps {
                 script {
@@ -39,9 +41,7 @@ pipeline {
                     dir('bussinbee/src/app') {
                         // Build Docker image
                         sh 'docker build -t my-node-app .'
-
-                        // Run Docker container
-                        sh 'docker run -p 4000:3000 -d my-node-app'
+                        sh 'docker run -p 4000:3000 -d --name karaoke my-node-app'
                     }
                 }
             }
@@ -56,10 +56,20 @@ pipeline {
                 }
             }
         }
+
         stage('Build and Test') {
             steps {
                 script {
                     sh 'mvn verify -X'
+                }
+            }
+        }
+
+        stage('Cleanup Docker Container') {
+            steps {
+                script {
+                    sh 'docker stop karaoke || true'
+                    sh 'docker rm karaoke || true'
                 }
             }
         }
