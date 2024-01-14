@@ -24,9 +24,7 @@ pipeline {
                     def dockerfileContent = """
                         FROM node:14
                         WORKDIR bussinbee/src/app
-                        RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    npm ci --omit=dev
+                        RUN --mount=type=bind,source=package.json,target=package.json --mount=type=bind,source=package-lock.json,target=package-lock.json npm ci --omit=dev
                         COPY . .
                         RUN npm install
                         EXPOSE 4000
