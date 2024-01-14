@@ -70,7 +70,7 @@ EXPOSE 4000
 # Run the application
 CMD npm run dev      
                     """
-                    writeFile(file: '/var/lib/jenkins/workspace/Team4_Pipeline/Dockerfile', text: dockerfileContent)
+                    writeFile(file: '/var/lib/jenkins/workspace/tt/bussinbee/src/app/Dockerfile', text: dockerfileContent)
                 }
             }
         }
