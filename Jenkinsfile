@@ -17,18 +17,6 @@ pipeline {
                 }
             }
         }
-        stage('Create .dockerignore') {
-            steps {
-                script {
-                    def dockerignoreContent = """
-                        # Exclude all files except .json
-                        **
-                        !*.json
-                    """
-                    writeFile(file: '.dockerignore', text: dockerignoreContent)
-                }
-            }
-        }
         stage('Create Dockerfile') {
             steps {
                 script {
