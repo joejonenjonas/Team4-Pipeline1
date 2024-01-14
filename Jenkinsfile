@@ -60,9 +60,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            // Cleanup actions, like stopping Docker containers or archiving artifacts, can be placed here.
-        }
-    }
 }
