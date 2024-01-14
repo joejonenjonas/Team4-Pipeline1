@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost/brainstorm13?serverTimezone=UTC
-    username: brainstorm13user
-    password: brainstorm13userpw
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect

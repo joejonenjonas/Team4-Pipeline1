@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Inloggen en uitloggen" skipped="0" tests="2" time="38.01" timestamp="2024-01-10 04:08:47"><testcase name="Ik wil uitloggen"/><testcase name="Ik wil inloggen"><failure type="java.lang.AssertionError"/><system-err>null&#13;
-be.odisee.brainstorm.acceptancetests.pageobjects.Signinpage.checkenmeerwindows(Signinpage.java:37)&#13;
-be.odisee.brainstorm.acceptancetests.steps.StepDefinitions.Een_nieuw_scherm_gaat_open(StepDefinitions.java:166)&#13;
-✽.a new screen should pop up(file:///C:/Users/Charles/Documents/Toegepaste_Informatica_2023_2024/Software%20testing/voorbeeld%20cucumber/brainstorm2018wa2sb2023geintegreerdeopdracht1/src/test/resources/features/InloggenenUitloggen.feature:17)&#13;
-</system-err></testcase></testsuite>

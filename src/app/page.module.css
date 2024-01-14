@@ -1,0 +1,24 @@
+/* .main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6rem;
+	min-height: 100vh;
+}
+.list {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+.list_item {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.list_item img {
+	width: 100px;
+	border-radius: 10%;
+}
+ */
