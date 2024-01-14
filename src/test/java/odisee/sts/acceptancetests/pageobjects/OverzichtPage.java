@@ -44,7 +44,7 @@ public class OverzichtPage extends AbstractPage{
     }
     public OverzichtPage checkenoppagina(){
         String url = driver.getCurrentUrl();
-        String url2befound = "http://localhost:3000/main";
+        String url2befound = "http://localhost:4000/main";
         Assert.assertTrue(url.contains(url2befound));
         return this;
     }
