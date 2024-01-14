@@ -32,7 +32,7 @@ pipeline {
                         USER node
 
                         # Copy package.json and package-lock.json to leverage Docker's caching
-                        COPY --chown=node:testttt package*.json ./
+                        COPY --chown=node:testttt ./package*.json ./
 
                         # Download dependencies
                         RUN npm ci --omit=dev
