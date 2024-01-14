@@ -30,7 +30,7 @@ pipeline {
 
                         # Switch to the 'node' user
                         USER node
-
+                        COPY package.json ./
                         # Copy package.json and package-lock.json to leverage Docker's caching
                         COPY --chown=node:testttt ./package.json ./
 
