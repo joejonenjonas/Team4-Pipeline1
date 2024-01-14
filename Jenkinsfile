@@ -24,6 +24,7 @@ pipeline {
                     def dockerfileContent = """
                         FROM node:14
                         WORKDIR bussinbee/src/app
+                        RUN ls -l
                         COPY package*.json ./
                         COPY . .
                         RUN npm install
