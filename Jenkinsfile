@@ -23,8 +23,8 @@ pipeline {
                 script {
                     def dockerfileContent = """
                         FROM node:14
-                        WORKDIR src/app
-                        COPY package.json ./
+                        WORKDIR bussinbee/src/app
+                        COPY package*.json ./
                         COPY . .
                         RUN npm install
                         EXPOSE 4000
