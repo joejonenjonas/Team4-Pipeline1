@@ -32,13 +32,13 @@ pipeline {
                         USER node
 
                         # Copy package.json and package-lock.json to leverage Docker's caching
-                        COPY --chown=node:nodegroup package*.json ./
+                        COPY --chown=node:testttt package*.json ./
 
                         # Download dependencies
                         RUN npm ci --omit=dev
 
                         # Copy the rest of the source files into the image
-                        COPY --chown=node:nodegroup . .
+                        COPY --chown=node:testttt . .
 
                         # Expose the port that the application listens on
                         EXPOSE 4000
