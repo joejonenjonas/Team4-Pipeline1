@@ -35,9 +35,6 @@ pipeline {
                     def dockerfileContent = """
 # Use the official Node.js image as the base image
 FROM node:14-alpine as base
-RUN cd ..
-RUN cd ..
-RUN cd ..
 # Set the working directory inside the container
 WORKDIR /
 RUN pwd
