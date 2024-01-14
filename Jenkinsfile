@@ -21,7 +21,6 @@ pipeline {
         stage('Build and Test') {
             steps {
                 script {
-                    sh 'mvn test -X'
                     sh 'mvn verify -X'
                 }
             }
