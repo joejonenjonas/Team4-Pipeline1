@@ -23,12 +23,12 @@ pipeline {
                 script {
                     def dockerfileContent = """
                         FROM node:14
-                        WORKDIR /bussinbee/src/app
-                        COPY /bussinbee/package.json ./
-                        COPY . .
+                        WORKDIR /app/bussinbee/src/app
+                        COPY package*.json ./
                         RUN npm install
+                        COPY . .
                         EXPOSE 4000
-                        CMD [\"npm\", \"run\", \"dev\"]
+                        CMD ["npm", "run", "dev"]
                     """
                     writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
                 }
