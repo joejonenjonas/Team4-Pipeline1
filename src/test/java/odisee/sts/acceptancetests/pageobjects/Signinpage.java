@@ -16,7 +16,7 @@ public class Signinpage extends AbstractPage {
 
 
     public Signinpage navigeerNaarSigninPage() {
-        driver.navigate().to("http://localhost:3000/login");
+        driver.navigate().to("http://localhost:4000/login");
         return new Signinpage(driver);
     }
 
@@ -38,7 +38,7 @@ public class Signinpage extends AbstractPage {
     }
     public Signinpage checkenoppaginaurl(){
         String url = driver.getCurrentUrl();
-        String url2befound = "http://localhost:3000/login";
+        String url2befound = "http://localhost:4000/login";
         Assert.assertTrue(url.contains(url2befound));
         return this;
     }
