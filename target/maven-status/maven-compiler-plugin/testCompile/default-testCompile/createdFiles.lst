@@ -1,0 +1,9 @@
+odisee\sts\acceptancetests\pageobjects\OverzichtPage.class
+odisee\sts\acceptancetests\steps\StepDefinitions.class
+odisee\sts\acceptancetests\pageobjects\Playlistpage.class
+odisee\sts\acceptancetests\AcceptanceTestSuite.class
+odisee\sts\acceptancetests\pageobjects\Signinpage.class
+odisee\sts\unittests\DiscountPolicyServiceTest.class
+odisee\sts\acceptancetests\pageobjects\Aboutpage.class
+odisee\sts\acceptancetests\pageobjects\AbstractPage.class
+odisee\sts\acceptancetests\ParameterTypes.class

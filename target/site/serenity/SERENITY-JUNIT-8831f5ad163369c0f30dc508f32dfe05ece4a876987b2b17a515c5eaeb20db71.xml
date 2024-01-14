@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="playlist openen" skipped="0" tests="2" time="15.12" timestamp="2024-01-14 02:35:11"><testcase name="Ik wil een playlist aanmaken"/><testcase name="Een playlist openen"><failure message="Did not find this text: New Playlist&#10;" type="java.lang.AssertionError">Did not find this text: New Playlist
+</failure><system-err>Did not find this text: New Playlist
+&#13;
+odisee.sts.acceptancetests.steps.StepDefinitions.De_playlist_wordt_geopend(StepDefinitions.java:102)&#13;
+✽.the page of that playlist should open(file:///C:/Users/jonas/Downloads/discountPolicyCucumberV3geintegreerdeopdracht/discountPolicyCucumberV3%20(2)/src/test/resources/features/playlistopenen.feature:17)&#13;
+</system-err></testcase></testsuite>

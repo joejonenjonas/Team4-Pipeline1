@@ -1,0 +1,188 @@
+# Created at 2024-01-14T14:35:28.182
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+
+# Created at 2024-01-14T14:35:47.822
+Unexpected IOException with stream: 14:35:47.820 [main] ERROR  - 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Een playlist openen
+-----------------------------------------------------------------------
+
+
+# Created at 2024-01-14T14:35:47.824
+Unexpected IOException with stream: 14:35:47.823 [main] DEBUG  - RELATED ISSUES: 
+
+
+# Created at 2024-01-14T14:35:47.826
+Unexpected IOException with stream: 14:35:47.825 [main] ERROR  -     Test failed at step: Then the page of that playlist should open
+
+
+# Created at 2024-01-14T14:35:47.827
+Unexpected IOException with stream: 14:35:47.826 [main] ERROR  -     Did not find this text: New Playlist
+
+
+# Created at 2024-01-14T14:35:47.845
+Unexpected IOException: 8,1,odisee.sts.acceptancetests.AcceptanceTestSuite,Een playlist openen,null,Did not find this text: New Playlist\000A,null,Did not find this text: New Playlist\000A,AcceptanceTestSuite Did not find this text: New Playlist\000A,java.lang.AssertionError: \000ADid not find this text: New Playlist\000A\000A
+
+
+# Created at 2024-01-14T14:35:47.855
+Unexpected IOException with stream: 14:35:47.854 [main] DEBUG net.thucydides.model.reports.ReportService - Reporting formats: [JSON]
+
+
+# Created at 2024-01-14T14:35:47.864
+Unexpected IOException with stream: 14:35:47.863 [main] DEBUG net.thucydides.model.reports.ReportService - Reporting formats: [JSON]
+
+
+# Created at 2024-01-14T14:35:47.886
+Unexpected IOException with stream: 14:35:47.884 [main] DEBUG net.thucydides.model.reports.ReportService - Generating reports for 8 test outcomes using: net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07
+
+
+# Created at 2024-01-14T14:35:47.890
+Unexpected IOException with stream: 14:35:47.888 [pool-17-thread-1] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome uitloggen:Ik wil inloggen
+
+
+# Created at 2024-01-14T14:35:47.891
+Unexpected IOException with stream: 14:35:47.888 [pool-17-thread-2] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome uitloggen:Ik wil uitloggen
+
+
+# Created at 2024-01-14T14:35:47.893
+Unexpected IOException with stream: 14:35:47.889 [pool-17-thread-3] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome Liedjeafspelen:Ik wil de like button bekijken
+
+
+# Created at 2024-01-14T14:35:47.895
+Unexpected IOException with stream: 14:35:47.889 [pool-17-thread-4] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome Liedjeafspelen:Ik wil een liedje laten afspelen
+
+
+# Created at 2024-01-14T14:35:47.896
+Unexpected IOException with stream: 14:35:47.889 [pool-17-thread-5] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome aboutpage bekijken:Ik wil naar de aboutpage gaan
+
+
+# Created at 2024-01-14T14:35:47.897
+Unexpected IOException with stream: 14:35:47.890 [pool-17-thread-7] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome playlist openen:Ik wil een playlist aanmaken
+
+
+# Created at 2024-01-14T14:35:47.899
+Unexpected IOException with stream: 14:35:47.890 [pool-17-thread-6] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome aboutpage bekijken:Ik wil de aboutpage verlaten
+
+
+# Created at 2024-01-14T14:35:47.901
+Unexpected IOException with stream: 14:35:47.899 [pool-17-thread-6] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: aboutpage bekijken:Ik wil de aboutpage verlaten
+
+
+# Created at 2024-01-14T14:35:47.902
+Unexpected IOException with stream: 14:35:47.891 [pool-17-thread-1] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: uitloggen:Ik wil inloggen
+
+
+# Created at 2024-01-14T14:35:47.904
+Unexpected IOException with stream: 14:35:47.891 [pool-17-thread-8] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome playlist openen:Een playlist openen
+
+
+# Created at 2024-01-14T14:35:47.906
+Unexpected IOException with stream: 14:35:47.905 [pool-17-thread-8] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: playlist openen:Een playlist openen
+
+
+# Created at 2024-01-14T14:35:47.907
+Unexpected IOException with stream: 14:35:47.892 [pool-17-thread-2] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: uitloggen:Ik wil uitloggen
+
+
+# Created at 2024-01-14T14:35:47.910
+Unexpected IOException with stream: 14:35:47.893 [pool-17-thread-3] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: Liedjeafspelen:Ik wil de like button bekijken
+
+
+# Created at 2024-01-14T14:35:47.911
+Unexpected IOException with stream: 14:35:47.895 [pool-17-thread-4] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: Liedjeafspelen:Ik wil een liedje laten afspelen
+
+
+# Created at 2024-01-14T14:35:47.912
+Unexpected IOException with stream: 14:35:47.896 [pool-17-thread-5] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: aboutpage bekijken:Ik wil naar de aboutpage gaan
+
+
+# Created at 2024-01-14T14:35:47.914
+Unexpected IOException with stream: 14:35:47.898 [pool-17-thread-7] DEBUG net.thucydides.model.reports.ReportService - net.thucydides.model.reports.json.JSONTestOutcomeReporter@73f6e07: Generating report for test outcome: playlist openen:Ik wil een playlist aanmaken
+
+
+# Created at 2024-01-14T14:35:47.919
+Unexpected IOException with stream: 14:35:47.918 [pool-17-thread-6] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil de aboutpage verlaten to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\a278f425136e643ec6e5c76690b657696e76fd66451a25ad3c45cd24a83fa1a5.json)
+
+
+# Created at 2024-01-14T14:35:47.920
+Unexpected IOException with stream: 14:35:47.918 [pool-17-thread-1] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil inloggen to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\c98b684bcdc53b9cad3d240afac417ff62372664b8c0c62bbfd70a5392c56e12.json)
+
+
+# Created at 2024-01-14T14:35:47.921
+Unexpected IOException with stream: 14:35:47.918 [pool-17-thread-2] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil uitloggen to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\ccaafebd0138cfe1483db6aead113fecc5da1c6cdc6e5c29430f24f6883fbad2.json)
+
+
+# Created at 2024-01-14T14:35:47.923
+Unexpected IOException with stream: 14:35:47.918 [pool-17-thread-8] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Een playlist openen to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\678cb6f1fbe2ef1016bd3053ff2a4e5e7151b901ba5fa2f1dee6ee803c798357.json)
+
+
+# Created at 2024-01-14T14:35:47.924
+Unexpected IOException with stream: 14:35:47.919 [pool-17-thread-3] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil de like button bekijken to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\920db625328c8474267deea8d8904c7da9632929fd4b59549b641ace1988c222.json)
+
+
+# Created at 2024-01-14T14:35:47.926
+Unexpected IOException with stream: 14:35:47.919 [pool-17-thread-5] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil naar de aboutpage gaan to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\4050e0c0657c0e1016f50fcf2e645fa599e987e998c4074a219ada5ce5171863.json)
+
+
+# Created at 2024-01-14T14:35:47.927
+Unexpected IOException with stream: 14:35:47.919 [pool-17-thread-4] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil een liedje laten afspelen to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\a906353eef7ccba22eaf3469088f7ef9ed2298e0d30299117213c21c5f4bfdce.json)
+
+
+# Created at 2024-01-14T14:35:47.929
+Unexpected IOException with stream: 14:35:47.919 [pool-17-thread-7] DEBUG net.thucydides.model.reports.json.JSONTestOutcomeReporter - Generating JSON report for Ik wil een playlist aanmaken to file C:\Users\jonas\Downloads\discountPolicyCucumberV3geintegreerdeopdracht\discountPolicyCucumberV3 (2)\target\site\serenity\8831f5ad163369c0f30dc508f32dfe05ece4a876987b2b17a515c5eaeb20db71.json)
+
+
+# Created at 2024-01-14T14:35:47.992
+Unexpected IOException with stream: 14:35:47.991 [pool-17-thread-3] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome Liedjeafspelen:Ik wil de like button bekijken done
+
+
+# Created at 2024-01-14T14:35:47.999
+Unexpected IOException with stream: 14:35:47.997 [pool-17-thread-6] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome aboutpage bekijken:Ik wil de aboutpage verlaten done
+
+
+# Created at 2024-01-14T14:35:48.001
+Unexpected IOException with stream: 14:35:47.997 [pool-17-thread-7] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome playlist openen:Ik wil een playlist aanmaken done
+
+
+# Created at 2024-01-14T14:35:48.002
+Unexpected IOException with stream: 14:35:47.999 [pool-17-thread-8] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome playlist openen:Een playlist openen done
+
+
+# Created at 2024-01-14T14:35:48.006
+Unexpected IOException with stream: 14:35:48.003 [pool-17-thread-2] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome uitloggen:Ik wil uitloggen done
+
+
+# Created at 2024-01-14T14:35:48.007
+Unexpected IOException with stream: 14:35:48.003 [pool-17-thread-1] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome uitloggen:Ik wil inloggen done
+
+
+# Created at 2024-01-14T14:35:48.009
+Unexpected IOException with stream: 14:35:48.004 [pool-17-thread-4] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome Liedjeafspelen:Ik wil een liedje laten afspelen done
+
+
+# Created at 2024-01-14T14:35:48.010
+Unexpected IOException with stream: 14:35:48.007 [pool-17-thread-5] DEBUG net.thucydides.model.reports.ReportService - Processing test outcome aboutpage bekijken:Ik wil naar de aboutpage gaan done
+
+
+# Created at 2024-01-14T14:35:48.013
+Unexpected IOException with stream: 14:35:48.011 [main] DEBUG net.thucydides.model.reports.ReportService - Shutting down executor service
+
+
+# Created at 2024-01-14T14:35:48.015
+Unexpected IOException with stream: 14:35:48.014 [main] DEBUG net.thucydides.model.reports.ReportService - Reports generated in: 127 ms
+
+
+# Created at 2024-01-14T14:35:48.186
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,odisee.sts.acceptancetests.AcceptanceTestSuite,null,null,null
+
+
