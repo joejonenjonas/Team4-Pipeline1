@@ -23,23 +23,14 @@ pipeline {
                 script {
                     def dockerfileContent = """
                         FROM node:14
-                        WORKDIR /app/bussinbee/src/app
-                        COPY package*.json ./
-                        RUN npm install
+                        WORKDIR Team4-Pipeline1-develop/src/app
+                        COPY COPY Team4-Pipeline1-develop/package.json ./
                         COPY . .
+                        RUN npm install
                         EXPOSE 4000
-                        CMD ["npm", "run", "dev"]
+                        CMD [\"npm\", \"run\", \"dev\"]
                     """
                     writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
-                }
-            }
-        }
-         stage('Build Docker Image') {
-            steps {
-                script {
-                    sh 'docker buildx create --use'
-                    sh 'docker buildx inspect default --bootstrap'
-                    sh 'docker buildx build -t my-node-app . --platform linux/amd64,linux/arm64'
                 }
             }
         }
