@@ -1,6 +1,14 @@
 pipeline {
     agent any
     stages {
+        stage('Cleanup Docker Container') {
+            steps {
+                script {
+                    sh 'docker stop karaoke || true'
+                    sh 'docker rm karaoke || true'
+                }
+            }
+        }
         stage('Checkout Code') {
             steps {
                 checkout([
@@ -61,14 +69,6 @@ pipeline {
         stage('Build and Test') {
             steps {
                 sh 'mvn clean verify -X'
-            }
-        }
-        stage('Cleanup Docker Container') {
-            steps {
-                script {
-                    sh 'docker stop karaoke || true'
-                    sh 'docker rm karaoke || true'
-                }
             }
         }
     }
