@@ -26,7 +26,7 @@ pipeline {
                 script {
                     def dockerfileContent = """
                     # Use the official Node.js image as the base image
-                    FROM selenium/standalone-chrome:latest
+                    FROM node:14-alpine as base
                     # Set the working directory inside the container
                     WORKDIR /app
                     # Copy package.json and package-lock.json (if available)
