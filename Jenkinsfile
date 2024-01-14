@@ -17,6 +17,21 @@ pipeline {
                 }
             }
         }
+        stage('Create Dockerfile') {
+            steps {
+                script {
+                    def dockerfileContent = """
+                        FROM node:14
+                        WORKDIR /app
+                        COPY . /app
+                        RUN npm install
+                        EXPOSE 3000
+                        CMD [\"npm\", \"run\", \"dev\"]
+                    """
+                    writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
+                }
+            }
+        }
         stage('Build and Run Node.js App in Docker') {
             steps {
                 script {
