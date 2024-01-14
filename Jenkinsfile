@@ -18,18 +18,6 @@ pipeline {
                 }
             }
         }
-        stage('Create .dockerignore') {
-            steps {
-                script {
-                    def dockerignoreContent = """
-                        # Exclude all files except .json
-                        **
-                        !*.json
-                    """
-                    writeFile(file: 'bussinbee/src/app/.dockerignore', text: dockerignoreContent)
-                }
-            }
-        }
         stage('Create Dockerfile') {
             steps {
                 script {
@@ -80,7 +68,7 @@ CMD npm run dev
 
                         
                     """
-                    writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
+                    writeFile(file: '/var/lib/jenkins/workspace/Team4_Pipeline/Dockerfile', text: dockerfileContent)
                 }
             }
         }
