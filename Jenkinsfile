@@ -22,7 +22,7 @@ pipeline {
                 script {
                     def dockerfileContent = """
 FROM node
-COPY Team4-Pipeline1-develop"package.json .
+COPY Team4-Pipeline1-develop/package.json .
 WORKDIR /src/app
 COPY . .
 EXPOSE 4000
