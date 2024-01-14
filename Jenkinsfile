@@ -103,7 +103,6 @@ CMD npm run dev
                 }
             }
         }
-        stages {
             stage('Merge Develop into Master') {
                 steps {
                     script {
@@ -118,7 +117,6 @@ CMD npm run dev
                     }
                 }
             }
-        }
 
         stage('Cleanup Docker Container') {
             steps {
