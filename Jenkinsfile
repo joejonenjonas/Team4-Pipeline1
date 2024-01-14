@@ -35,12 +35,12 @@ pipeline {
                     def dockerfileContent = """
 # Use the official Node.js image as the base image
 FROM node:14-alpine as base
+RUN cd ..
+RUN cd ..
+RUN cd ..
 # Set the working directory inside the container
 WORKDIR /
 RUN pwd
-RUN cd ..
-RUN cd ..
-RUN cd ..
 # Copy package.json and package-lock.json to leverage Docker's caching...
 COPY /var/lib/jenkins/workspace/Team4_Pipeline/package .
 
