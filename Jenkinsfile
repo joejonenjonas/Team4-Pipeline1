@@ -26,7 +26,6 @@ pipeline {
                         WORKDIR bussinbee/src/app
                         RUN ls -l
                         COPY . .
-                        COPY .env /usr/src/app
                         RUN npm install
                         EXPOSE 4000
                         CMD [\"npm\", \"run\", \"dev\"]
