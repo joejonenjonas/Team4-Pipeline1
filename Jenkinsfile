@@ -17,52 +17,45 @@ pipeline {
                 }
             }
         }
+        
+        stage('Create .dockerignore') {
+            steps {
+                script {
+                    def dockerignoreContent = """
+                        # Include all files
+                        *
+                        # Exclude specific files or directories
+                        !*.json
+                    """
+                    writeFile(file: '.dockerignore', text: dockerignoreContent)
+                }
+            }
+        }
+        
         stage('Create Dockerfile') {
             steps {
                 script {
                     def dockerfileContent = """
-# Use the official Node.js image as the base image
-FROM node:14-alpine as base
-# Set the working directory inside the container
-WORKDIR /app
-RUN pwd
-# Copy package.json and package-lock.json to leverage Docker's caching...
-COPY package*.json ./
-# Download dependencies
-RUN npm ci --omit=dev
-
-# Create a stage for building
-FROM base as build
-
-# Copy the rest of the source files into the image
-COPY . .
-
-# Build the application
-RUN npm run build
-
-# Create the final stage
-FROM base as final
-
-# Set the environment to production
-ENV NODE_ENV production
-
-# Switch to the 'node' user
-USER node
-
-# Copy necessary files from the build stage
-COPY --from=build /usr/src/app/next.config.js .
-
-# Expose the port that the application listens on
-EXPOSE 4000
-
-# Run the application
-CMD npm run dev      
+                        # Use the official Node.js image as the base image
+                        FROM node:14-alpine as base
+                        # Set the working directory inside the container
+                        WORKDIR /app
+                        # Copy package.json and package-lock.json (if available)
+                        COPY package*.json ./
+                        # Install production dependencies.
+                        RUN npm ci --only=production
+                        # Copy the rest of the application code
+                        COPY . .
+                        # Expose the port that the application listens on
+                        EXPOSE 4000
+                        # Run the application
+                        CMD ["npm", "run", "start"]
                     """
                     writeFile(file: 'Dockerfile', text: dockerfileContent)
                 }
             }
         }
-
+        
         stage('Build and Run Node.js App in Docker') {
             steps {
                 script {
@@ -93,17 +86,16 @@ CMD npm run dev
                 }
             }
         }
-            stage('Merge Develop into Master') {
-                steps {
-                    script {
-                        sh 'git checkout master'
-
-                        sh 'git merge origin/develop'
-
-                        sh 'git push origin master'
-                    }
+        
+        stage('Merge Develop into Master') {
+            steps {
+                script {
+                    sh 'git checkout master'
+                    sh 'git merge origin/develop'
+                    sh 'git push origin master'
                 }
             }
+        }
 
         stage('Cleanup Docker Container') {
             steps {
