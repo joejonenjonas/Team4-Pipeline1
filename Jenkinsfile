@@ -25,7 +25,7 @@ pipeline {
                         WORKDIR /app
                         COPY . /app
                         RUN npm install
-                        EXPOSE 3000
+                        EXPOSE 4000
                         CMD [\"npm\", \"run\", \"dev\"]
                     """
                     writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
@@ -41,7 +41,7 @@ pipeline {
                         sh 'docker build -t my-node-app .'
 
                         // Run Docker container
-                        sh 'docker run -p 3000:3000 -d my-node-app'
+                        sh 'docker run -p 4000:3000 -d my-node-app'
                     }
                 }
             }
