@@ -21,8 +21,6 @@ pipeline {
             steps {
                 script {
                         sh 'ls -l'
-                        sh 'cd bussinbee'
-                        sh 'ls -l'
                         sh 'npm install'
                         sh 'npm run dev'
                 }
