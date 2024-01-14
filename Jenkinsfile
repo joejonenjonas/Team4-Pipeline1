@@ -23,14 +23,14 @@ pipeline {
                     def dockerfileContent = """
                         FROM node:14-alpine
 
-                        WORKDIR /usr/src/app
+                        WORKDIR /src/app
 
                         # Add the 'node' user to a new group 'nodegroup' and set ownership of the working directory
                         RUN addgroup -S testttt && adduser node testttt && chown -R node:testttt /usr/src/app
 
                         # Switch to the 'node' user
                         USER node
-                        COPY package.json ./
+                        
                         # Copy package.json and package-lock.json to leverage Docker's caching
                         COPY --chown=node:testttt ./package.json ./
 
