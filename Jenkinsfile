@@ -21,46 +21,51 @@ pipeline {
             steps {
                 script {
                     def dockerfileContent = """
-ARG NODE_VERSION=18.14.0
+# Use the official Node.js image as the base image
+FROM node:14-alpine as base
 
-
-FROM node:${NODE_VERSION}-alpine as base
-
+# Set the working directory inside the container
 WORKDIR /usr/src/app
 
+# Copy package.json and package-lock.json to leverage Docker's caching
+COPY package*.json ./
 
-FROM base as deps
+# Download dependencies
+RUN npm ci --omit=dev
 
+# Create a stage for building
+FROM base as build
 
-RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    --mount=type=cache,target=/root/.npm \
-    npm ci --omit=dev
-FROM deps as build
-
-RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=package-lock.json,target=package-lock.json \
-    --mount=type=cache,target=/root/.npm \
-    npm ci
-
+# Copy the rest of the source files into the image
 COPY . .
+
+# Build the application
 RUN npm run build
 
+# Create the final stage
 FROM base as final
 
+# Set the environment to production
 ENV NODE_ENV production
 
+# Switch to the 'node' user
 USER node
 
-COPY package.json .
+# Copy necessary files from the build stage
+COPY --from=build /usr/src/app/next.config.js .
 
-COPY --from=deps /usr/src/app/node_modules ./node_modules
-COPY --from=build /usr/src/app/next.config.js ./next.config.js
-
-
+# Expose the port that the application listens on
 EXPOSE 4000
 
+# Run the application
 CMD npm run dev
+
+
+
+
+
+
+
                         
                     """
                     writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
