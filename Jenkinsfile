@@ -39,7 +39,7 @@ FROM node:14-alpine as base
 # Set the working directory inside the container
 WORKDIR /
 RUN pwd
-# Copy package.json and package-lock.json to leverage Docker's caching
+# Copy package.json and package-lock.json to leverage Docker's caching...
 COPY /var/lib/jenkins/workspace/Team4_Pipeline/package.json .
 
 # Download dependencies
