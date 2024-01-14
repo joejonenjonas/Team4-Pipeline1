@@ -22,8 +22,8 @@ pipeline {
                 script {
                     def dockerfileContent = """
 FROM node
-WORKDIR /src/app
 COPY package.json .
+WORKDIR /src/app
 COPY . .
 EXPOSE 4000
 RUN npm run dev
