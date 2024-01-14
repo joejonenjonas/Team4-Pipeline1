@@ -25,9 +25,9 @@ pipeline {
 FROM node:14-alpine as base
 
 # Set the working directory inside the container
-WORKDIR /
+WORKDIR ./
 # Copy package.json and package-lock.json to leverage Docker's caching
-COPY package2.json ./
+COPY package.json ./
 
 # Download dependencies
 RUN npm ci --omit=dev
