@@ -21,7 +21,7 @@ pipeline {
             steps {
                 script {
                     def dockerfileContent = """
-FROM NODE
+FROM node
 WORKDIR /src/app
 COPY package.json .
 COPY . .
