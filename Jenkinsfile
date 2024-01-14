@@ -25,7 +25,7 @@ pipeline {
                         FROM node:14
                         WORKDIR bussinbee/src/app
                         RUN ls -l
-                        COPY ../package.json ./
+                        COPY ../../../package.json ./OPY ../package.json ./
                         COPY . .
                         RUN npm install
                         EXPOSE 4000
