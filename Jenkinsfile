@@ -26,7 +26,7 @@ pipeline {
 # Use the official Node.js image as the base image
 FROM node:14-alpine as base
 # Set the working directory inside the container
-WORKDIR ../var/lib/jenkins/workspace/Team4_Pipeline
+WORKDIR /var/lib/jenkins/workspace/Team4_Pipeline
 RUN ls -l
 # Copy package.json and package-lock.json to leverage Docker's caching
 COPY package.json ./
