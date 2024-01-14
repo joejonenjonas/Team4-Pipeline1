@@ -17,15 +17,7 @@ pipeline {
                 }
             }
         }
-        stage('Run app') {
-            steps {
-                script {
-                        sh 'ls -l'
-                        sh 'npm install'
-                        sh 'npm run dev'
-                }
-            }
-        }
+
 
         stage('Checkout test') {
             steps {
