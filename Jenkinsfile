@@ -71,5 +71,16 @@ pipeline {
                 sh 'mvn clean verify -X'
             }
         }
+            stage('Merge Develop into Master') {
+                steps {
+                    script {
+                        sh 'git checkout master'
+
+                        sh 'git merge origin/develop'
+
+                        sh 'git push origin master'
+                    }
+                }
+            }
     }
 }
