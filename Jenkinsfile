@@ -26,7 +26,7 @@ pipeline {
                         WORKDIR /usr/src/app
 
                         # Add the 'node' user to a new group 'nodegroup' and set ownership of the working directory
-                        RUN addgroup -S nodegroup && adduser -S -G nodegroup node && chown -R node:nodegroup /usr/src/app
+                        RUN addgroup -S testttt && adduser node testttt && chown -R node:testttt /usr/src/app
 
                         # Switch to the 'node' user
                         USER node
