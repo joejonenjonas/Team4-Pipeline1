@@ -25,7 +25,7 @@ pipeline {
                         **
                         !*.json
                     """
-                    writeFile(file: '/var/lib/jenkins/workspace/Team4_Pipeline/.dockerignore', text: dockerignoreContent)
+                    writeFile(file: '.dockerignore', text: dockerignoreContent)
                 }
             }
         }
@@ -70,7 +70,7 @@ EXPOSE 4000
 # Run the application
 CMD npm run dev      
                     """
-                    writeFile(file: '/var/lib/jenkins/workspace/tt/bussinbee/src/app/Dockerfile', text: dockerfileContent)
+                    writeFile(file: 'Dockerfile', text: dockerfileContent)
                 }
             }
         }
