@@ -27,8 +27,8 @@ FROM node:14-alpine
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json to leverage Docker's caching
-COPY package*.json ./
+                        # Copy package.json and package-lock.json to leverage Docker's caching
+                        COPY --chown=node:nodegroup package*.json ./
 
 # Download dependencies
 RUN npm ci --omit=dev
