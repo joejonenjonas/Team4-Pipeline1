@@ -28,7 +28,7 @@ FROM node:14-alpine as base
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to leverage Docker's caching
-COPY package*.json ./
+COPY package.json ./
 
 # Download dependencies
 RUN npm ci --omit=dev
