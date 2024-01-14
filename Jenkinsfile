@@ -21,30 +21,12 @@ pipeline {
             steps {
                 script {
                     def dockerfileContent = """
-                        FROM node:14-alpine
-
-                        WORKDIR /src/app
-
-                        # Add the 'node' user to a new group 'nodegroup' and set ownership of the working directory
-                        RUN addgroup -S testttt && adduser node testttt && chown -R node:testttt /usr/src/app
-
-                        # Switch to the 'node' user
-                        USER node
-                        
-                        # Copy package.json and package-lock.json to leverage Docker's caching
-                        COPY --chown=node:testttt ./package.json ./
-
-                        # Download dependencies
-                        RUN npm ci --omit=dev
-
-                        # Copy the rest of the source files into the image
-                        COPY --chown=node:testttt . .
-
-                        # Expose the port that the application listens on
-                        EXPOSE 4000
-
-                        # Run the application
-                        CMD npm run dev
+FROM NODE
+WORKDIR /src/app
+COPY package.json .
+COPY . .
+EXPOSE 4000
+RUN npm run dev
                         
                     """
                     writeFile(file: 'bussinbee/src/app/Dockerfile', text: dockerfileContent)
