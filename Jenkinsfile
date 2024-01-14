@@ -28,7 +28,7 @@ FROM node:14-alpine as base
 WORKDIR /
 RUN ls -l
 # Copy package.json and package-lock.json to leverage Docker's caching
-COPY /var/lib/jenkins/workspace/Team4_Pipeline/package.json /
+COPY /var/lib/jenkins/workspace/Team4_Pipeline/package.json ./
 
 # Download dependencies
 RUN npm ci --omit=dev
