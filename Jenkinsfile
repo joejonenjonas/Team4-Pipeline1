@@ -34,6 +34,15 @@ pipeline {
                 }
             }
         }
+         stage('Build Docker Image') {
+            steps {
+                script {
+                    sh 'docker buildx create --use'
+                    sh 'docker buildx inspect default --bootstrap'
+                    sh 'docker buildx build -t my-node-app . --platform linux/amd64,linux/arm64'
+                }
+            }
+        }
 
         stage('Build and Run Node.js App in Docker') {
             steps {
