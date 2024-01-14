@@ -106,13 +106,10 @@ CMD npm run dev
             stage('Merge Develop into Master') {
                 steps {
                     script {
-                        // Checkout the master branch
                         sh 'git checkout master'
 
-                        // Merge the develop branch into master
                         sh 'git merge origin/develop'
 
-                        // Push the changes to the remote repository
                         sh 'git push origin master'
                     }
                 }
