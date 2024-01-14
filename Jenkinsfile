@@ -28,7 +28,7 @@ RUN ls -l
 WORKDIR ../Team4-Pipeline1-develop/
 RUN ls -l
 # Copy package.json and package-lock.json to leverage Docker's caching
-COPY package.json ./
+COPY Team4-Pipeline1-develop/package.json ./
 
 # Download dependencies
 RUN npm ci --omit=dev
