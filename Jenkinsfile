@@ -23,7 +23,6 @@ pipeline {
                     def dockerfileContent = """
 # Use the official Node.js image as the base image
 FROM node:14-alpine as base
-RUN ls -l
 # Set the working directory inside the container
 WORKDIR ../Team4-Pipeline1-develop/
 RUN ls -l
