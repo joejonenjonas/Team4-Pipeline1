@@ -13,7 +13,7 @@ public class AbstractPage {
     }
 
     public OverzichtPage navigeerNaarOverzichtPagina(){
-        driver.navigate().to("http://localhost:3000/main");
+        driver.navigate().to("http://localhost:4000/main");
         return new OverzichtPage(driver);
     }
 
